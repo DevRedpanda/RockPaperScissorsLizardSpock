@@ -38,6 +38,10 @@ public static void main(String[] args)
        computerPlay = "P"; 
     else if (computerInt == 3) 
        computerPlay = "S"; 
+    else if (computerInt == 4)
+       computerPlay = "L";
+    else if (computerInt == 5)
+       computerPlay = "SP";
 
     //Get player's play from input-- note that this is 
     // stored as a string 
