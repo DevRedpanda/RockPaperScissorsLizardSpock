@@ -1,13 +1,12 @@
 /**
  * Created by bhalpin on 5/18/17.
- */
+ */import java.util.Scanner;
+import java.util.Random;
 public class Main {
-import java.util.Scanner; 
-import java.util.Random; 
 
 
-public class Rock 
-{ 
+
+
 public static void main(String[] args) 
 { 
     String personPlay; //User's play -- "R", "P", or "S" 
