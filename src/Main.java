@@ -26,7 +26,7 @@ public static void main(String[] args)
     System.out.println();
 
     //Generate computer's play (0,1,2) 
-    computerInt = generator.nextInt(3)+1; 
+    computerInt = generator.nextInt(5)+1;
 
     //Translate computer's randomly generated play to 
     //string using if //statements 
