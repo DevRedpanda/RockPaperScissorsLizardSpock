@@ -19,9 +19,9 @@ public static void main(String[] args)
     Scanner scan = new Scanner(System.in); 
     Random generator = new Random(); 
 
-    System.out.println("Hey, let's play Rock, Paper, Scissors!\n" + 
+    System.out.println("Hey, let's play Rock, Paper, Scissors, Lizard, Spock!\n" +
                        "Please enter a move.\n" + "Rock = R, Paper" + 
-                       "= P, and Scissors = S.");
+                       "= P, and Scissors = S." + "Lizard = L" + "Spock = SP");
 
     System.out.println();
 
