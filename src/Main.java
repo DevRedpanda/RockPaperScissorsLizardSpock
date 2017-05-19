@@ -9,8 +9,8 @@ public class Main {
 
 public static void main(String[] args) 
 { 
-    String personPlay; //User's play -- "R", "P", or "S" 
-    String computerPlay = ""; //Computer's play -- "R", "P", or "S" 
+    String personPlay; //User's play -- "R", "P", "S", "L", or "SP"
+    String computerPlay = ""; //Computer's play -- "R", "P", "L", or "SP"
     int computerInt; //Randomly generated number used to determine 
                      //computer's play 
     String response; 
