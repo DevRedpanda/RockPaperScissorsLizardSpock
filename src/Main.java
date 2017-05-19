@@ -7,8 +7,7 @@ public class Main {
 
 
 
-public static void main(String[] args) 
-{ 
+public static void main(String[] args) {
     String personPlay; //User's play -- "R", "P", "S", "L", or "SP"
     String computerPlay = ""; //Computer's play -- "R", "P", "L", or "SP"
     int computerInt; //Randomly generated number used to determine 
