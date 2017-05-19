@@ -21,7 +21,6 @@ public class mainCode {
             temporaryInput = rand.nextInt(5)+1;
             computerIn = computerArray[temporaryInput];
             if (userIn == computerIn) {
-                
                 // The game is a tie.
                 isTie = true;
             } else if ((userIn == "rock") && (computerIn == "scissors")) {
