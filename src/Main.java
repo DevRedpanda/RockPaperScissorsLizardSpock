@@ -18,7 +18,7 @@ public class Main { // Public class
 
         // Declare variables
         String personPlay; // User's play -- "R", "P", or "S"
-        String computerPlay = ""; // Computer's play -- "R", "P", or "S".
+        String ScomputerPlay = ""; // Computer's play -- "R", "P", or "S".
         String response;
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
@@ -35,21 +35,21 @@ public class Main { // Public class
         System.out.println(""); // Make a new line
 
         // Generate computer's play (0,1,2)
-        computerInt = generator.nextInt(3)+1;
+        int IcomputerPlay = generator.nextInt(5)+1;
 
         // Translate computer's randomly generated play to
         // string using if statements
 
-        if (computerInt == 1)
-           computerPlay = "R";
-        else if (computerInt == 2)
-           computerPlay = "P";
-        else if (computerInt == 3)
-           computerPlay = "S";
-        else if (computerInt == 4)
-           computerPlay = "L";
-        else if (computerInt == 5)
-           computerPlay = "SP";
+        if (IcomputerPlay == 1)
+           ScomputerPlay = "R";
+        else if (IcomputerPlay == 2)
+           ScomputerPlay = "P";
+        else if (IcomputerPlay == 3)
+           ScomputerPlay = "S";
+        else if (IcomputerPlay == 4)
+           ScomputerPlay = "L";
+        else if (IcomputerPlay == 5)
+           ScomputerPlay = "SP";
 
         // Get player's play from input-- note that this is
         // stored as a string
@@ -60,29 +60,29 @@ public class Main { // Public class
         personPlay = personPlay.toUpperCase();
 
         // Print computer's play
-        System.out.println("Computer play is: " + computerPlay);
+        System.out.println("Computer play is: " + IcomputerPlay);
 
 
         //Check to see who won. Use nested if statements.
 
         // Ben's suggestion: Use switch statement instead of nested if statements to make code more compact.
 
-        if (personPlay.equals(computerPlay))
+        if (personPlay.equals(IcomputerPlay))
            System.out.println("It's a tie!");
         else if (personPlay.equals("R"))
-           if (computerPlay.equals("S"))
+           if (ScomputerPlay.equals("S"))
               System.out.println("Rock crushes scissors. You win!!");
-        else if (computerPlay.equals("P"))
+        else if (ScomputerPlay.equals("P"))
                 System.out.println("Paper eats rock. You lose!!");
         else if (personPlay.equals("P"))
-           if (computerPlay.equals("S"))
+           if (ScomputerPlay.equals("S"))
            System.out.println("Scissor cuts paper. You lose!!");
-        else if (computerPlay.equals("R"))
+        else if (ScomputerPlay.equals("R"))
                 System.out.println("Paper eats rock. You win!!");
         else if (personPlay.equals("S"))
-             if (computerPlay.equals("P"))
+             if (ScomputerPlay.equals("P"))
              System.out.println("Scissor cuts paper. You win!!");
-        else if (computerPlay.equals("R"))
+        else if (ScomputerPlay.equals("R"))
                 System.out.println("Rock breaks scissors. You lose!!");
         else
              System.out.println("Invalid user input.");
