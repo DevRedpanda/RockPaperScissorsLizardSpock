@@ -7,6 +7,7 @@
  *      Made comments more descriptive.
  *      Added comments explaining more about the code.
  *      Indented code after first class.
+ *      Add Java Swing
  */
 
 // Import all frameworks
@@ -17,8 +18,8 @@ public class Main { // Public class
     public static void main(String[] args) { // Main class
 
         // Declare variables
-        String personPlay; // User's play -- "R", "P", or "S"
-        String ScomputerPlay = ""; // Computer's play -- "R", "P", or "S".
+        String personPlay; // User's play -- "R", "P", "S", "L", or "SP".
+        String ScomputerPlay = ""; // Computer's play -- "R", "P", "S", "L", or "SP".
         String response;
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
@@ -31,6 +32,8 @@ public class Main { // Public class
         System.out.println("Rock = R");
         System.out.println("Paper = P");
         System.out.println("Scissors = S");
+        System.out.println("Lizard = L");
+        System.out.println("Spock = SP");
 
         System.out.println(""); // Make a new line
 
@@ -60,14 +63,14 @@ public class Main { // Public class
         personPlay = personPlay.toUpperCase();
 
         // Print computer's play
-        System.out.println("Computer play is: " + IcomputerPlay);
+        System.out.println("Computer play is: " + ScomputerPlay);
 
 
         //Check to see who won. Use nested if statements.
 
         // Ben's suggestion: Use switch statement instead of nested if statements to make code more compact.
 
-        if (personPlay.equals(IcomputerPlay))
+        if (personPlay.equals(ScomputerPlay))
            System.out.println("It's a tie!");
         else if (personPlay.equals("R"))
            if (ScomputerPlay.equals("S"))
