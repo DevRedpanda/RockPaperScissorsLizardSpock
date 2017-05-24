@@ -68,7 +68,6 @@ public class Main { // Public class
 
 
         //Check to see who won. Use nested if statements.
-
         // Ben's suggestion: Use switch statement instead of nested if statements to make code more compact.
 
         if (personPlay.equals(computerPlay))
