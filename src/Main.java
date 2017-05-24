@@ -1,6 +1,7 @@
 /**
  * Created by bhalpin on 5/18/17.
- */import java.util.Scanner;
+ */
+import java.util.Scanner;
 import java.util.Random;
 public class Main {
 
