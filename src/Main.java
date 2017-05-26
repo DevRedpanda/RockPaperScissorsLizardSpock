@@ -71,10 +71,10 @@ public class Main { // Public class
         /* Check to see who won. Use nested if statements. */
 
         if (personPlay.equals(computerPlay))
-           System.out.println("It's a tie!");
+            System.out.println("It's a tie!");
         else if (personPlay.equals("R"))
             if (computerPlay.equals("S"))
-              System.out.println("Rock crushes scissors. You win!!");
+                System.out.println("Rock crushes scissors. You win!!");
         else if (computerPlay.equals("P"))
                 System.out.println("Paper covers rock. You lose!!");
         else if (computerPlay.equals("L"))
@@ -83,7 +83,7 @@ public class Main { // Public class
                 System.out.println("Spock vaporizes rock. You lose!!");
         else if (personPlay.equals("P"))
             if (computerPlay.equals("S"))
-               System.out.println("Scissor cuts paper. You lose!!");
+                System.out.println("Scissor cuts paper. You lose!!");
         else if (computerPlay.equals("R"))
                System.out.println("Paper covers rock. You win!!");
         else if (computerPlay.equals("L"))
@@ -117,7 +117,8 @@ public class Main { // Public class
                 System.out.println("Spock smashes scissor. You win!!");
         else if (computerPlay.equals("L"))
                 System.out.println("lizard poisons spock. You lose!!");
-        else
-             System.out.println("Invalid user input.");
+        else {
+                System.out.println("Invalid user input.");
+            }
     }
 }
