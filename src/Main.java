@@ -15,18 +15,18 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Main { // Public class
-    public static void main(String[] args) { // Main class
+    public static void main(String[] args) { /* Main class */
 
         // Declare variables
-        String personPlay; // User's play -- "R", "P", "S", "L", or "SP".
-        String computerPlay = ""; // Computer's play -- "R", "P", "S", "L", or "SP".
-        int computerInt; // Randomly generates a number to R, P, S, L, SP.
+        String personPlay; /* User's play -- "R", "P", "S", "L", or "SP". */
+        String computerPlay = ""; /* Computer's play -- "R", "P", "S", "L", or "SP". */
+        int computerInt; /* Randomly generates a number to R, P, S, L, SP. */
         String response;
 
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
 
-        // Give user instructions
+        /* Give user instructions */
         System.out.println("Hey, let's play Rock, Paper, Scissors!");
         System.out.println("Please make a move.");
         System.out.println("Rock make a move.");
@@ -39,11 +39,11 @@ public class Main { // Public class
 
         System.out.println(""); // Make a new line
 
-        // Generate computer's play (0,1,2,3,4)
+        /* Generate computer's play (0,1,2,3,4) */
         computerInt = generator.nextInt(5)+1;
 
-        // Translate computer's randomly generated play to
-        // string using if statements
+        /* Translate computer's randomly generated play to */
+        /* string using if statements */
 
         if (computerInt == 1)
            computerPlay = "R";
@@ -56,20 +56,19 @@ public class Main { // Public class
         else if (computerInt == 5)
            computerPlay = "SP";
 
-        // Get player's play from input-- note that this is
-        // stored as a string
+        /* Get player's play from input-- note that this is */
+        /* stored as a string */
         System.out.println("Enter your play: ");
         personPlay = scan.next();
 
-        // Make player's play uppercase for ease of comparison
+        /* Make player's play uppercase for ease of comparison */
         personPlay = personPlay.toUpperCase();
 
-        // Print computer's play
+        /* Print computer's play */
         System.out.println("Computer play is: " + computerPlay);
 
 
-        //Check to see who won. Use nested if statements.
-        // Ben's suggestion: Use switch statement instead of nested if statements to make code more compact.
+        /* Check to see who won. Use nested if statements. */
 
         if (personPlay.equals(computerPlay))
            System.out.println("It's a tie!");
