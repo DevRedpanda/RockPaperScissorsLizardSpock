@@ -73,20 +73,50 @@ public class Main { // Public class
         if (personPlay.equals(computerPlay))
            System.out.println("It's a tie!");
         else if (personPlay.equals("R"))
-           if (computerPlay.equals("S"))
+            if (computerPlay.equals("S"))
               System.out.println("Rock crushes scissors. You win!!");
         else if (computerPlay.equals("P"))
                 System.out.println("Paper covers rock. You lose!!");
+        else if (computerPlay.equals("L"))
+                System.out.println("Rock hits lizard. You win!!");
+        else if (computerPlay.equals("Sp"))
+                System.out.println("Spock vaporizes rock. You lose!!");
         else if (personPlay.equals("P"))
-           if (computerPlay.equals("S"))
-           System.out.println("Scissor cuts paper. You lose!!");
+            if (computerPlay.equals("S"))
+               System.out.println("Scissor cuts paper. You lose!!");
         else if (computerPlay.equals("R"))
                System.out.println("Paper covers rock. You win!!");
+        else if (computerPlay.equals("L"))
+                System.out.println("Lizard eats paper. You lose!!");
+        else if (computerPlay.equals("Sp"))
+                System.out.println("Paper disproves spock. You win!!");
         else if (personPlay.equals("S"))
-             if (computerPlay.equals("P"))
-             System.out.println("Scissor cuts paper. You win!!");
+            if (computerPlay.equals("P"))
+                 System.out.println("Scissor cuts paper. You win!!");
         else if (computerPlay.equals("R"))
                 System.out.println("Rock breaks scissors. You lose!!");
+        else if (computerPlay.equals("L"))
+                System.out.println("Scissor decapitates lizard. You win!!");
+        else if (computerPlay.equals("Sp"))
+                System.out.println("Spock crushes scissor. You lose!!");
+        else if (personPlay.equals("L"))
+            if (computerPlay.equals("R"))
+                System.out.println("Rock crushes lizard. You lose!!");
+        else if (computerPlay.equals("P"))
+                System.out.println("Lizard eats paper. You win!!");
+        else if (computerPlay.equals("S"))
+                System.out.println("Scissor decapitates lizard. You lose!!");
+        else if (computerPlay.equals("Sp"))
+                System.out.println("Lizard poisons spock. You win!!");
+        else if (personPlay.equals("Sp"))
+            if (computerPlay.equals("R"))
+                System.out.println("Spock vaporizes rock. You win!!");
+        else if (computerPlay.equals("P"))
+                System.out.println("Paper disproves of spock. You lose!!");
+        else if (computerPlay.equals("S"))
+                System.out.println("Spock smashes scissor. You win!!");
+        else if (computerPlay.equals("L"))
+                System.out.println("lizard poisons spock. You lose!!");
         else
              System.out.println("Invalid user input.");
     }
