@@ -20,8 +20,9 @@ public class Main { // Public class
         // Declare variables
         String personPlay; // User's play -- "R", "P", "S", "L", or "SP".
         String computerPlay = ""; // Computer's play -- "R", "P", "S", "L", or "SP".
-        int computerInt;
+        int computerInt; // Randomly generates a number to R, P, S, L, SP.
         String response;
+
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
 
@@ -76,12 +77,12 @@ public class Main { // Public class
            if (computerPlay.equals("S"))
               System.out.println("Rock crushes scissors. You win!!");
         else if (computerPlay.equals("P"))
-                System.out.println("Paper eats rock. You lose!!");
+                System.out.println("Paper covers rock. You lose!!");
         else if (personPlay.equals("P"))
            if (computerPlay.equals("S"))
            System.out.println("Scissor cuts paper. You lose!!");
         else if (computerPlay.equals("R"))
-                System.out.println("Paper eats rock. You win!!");
+               System.out.println("Paper covers rock. You win!!");
         else if (personPlay.equals("S"))
              if (computerPlay.equals("P"))
              System.out.println("Scissor cuts paper. You win!!");
